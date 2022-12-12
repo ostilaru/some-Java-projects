@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" styleClass="left-form" stylesheets="@../../../../java/com/example/demo/login.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.customerDashboardController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="700.0" prefWidth="1300.0" styleClass="greengreen-back" stylesheets="@../../../../java/com/example/demo/employee.css">
+         <children>
+            <BorderPane layoutX="333.0" layoutY="216.0" prefHeight="700.0" prefWidth="1300.0" styleClass="green-background" stylesheets="@../../../../java/com/example/demo/employee.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="45.0" prefWidth="1100.0" styleClass="greengreen-back" stylesheets="@../../../../java/com/example/demo/employee.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="271.0" layoutY="-68.0" prefHeight="62.0" prefWidth="1100.0" stylesheets="@../../../../java/com/example/demo/employee.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="close" layoutX="1031.0" layoutY="1.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="45.0" styleClass="close" stylesheets="@../../../../java/com/example/demo/employee.css" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CLOSE" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="minimize" layoutX="1059.0" layoutY="16.0" mnemonicParsing="false" onAction="#minimize" prefHeight="30.0" prefWidth="45.0" styleClass="minus" stylesheets="@../../../../java/com/example/demo/employee.css" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="6.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="MINUS" />
+                                 </graphic>
+                              </Button>
+                              <FontAwesomeIconView fill="#8a9441" glyphName="SHOPPING_CART" layoutX="27.0" layoutY="28.0" size="2.5EM" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="6.0" />
+                              <Label layoutX="68.0" layoutY="15.0" stylesheets="@../../../../java/com/example/demo/employee.css" text="SuperMarket System | Customer">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="green-background" />
+                           </styleClass>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="649.0" prefWidth="231.0" styleClass="Left" stylesheets="@../../../../java/com/example/demo/employee.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <FontAwesomeIconView fill="#c9945e" glyphName="USER" layoutX="79.0" layoutY="168.0" size="12EM" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="30.0" />
+                        <Label layoutX="101.0" layoutY="192.0" text="Welcome," textFill="WHITE" AnchorPane.leftAnchor="75.0">
+                           <font>
+                              <Font name="Tahoma" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="purchase_customerName" layoutX="101.0" layoutY="223.0" text="jianglei" textFill="WHITE" AnchorPane.leftAnchor="75.4">
+                           <font>
+                              <Font name="Tahoma Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Line endX="100.0" layoutX="113.0" layoutY="262.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                        <Button fx:id="purchase_btn" layoutX="5.4" layoutY="298.0" mnemonicParsing="false" onAction="#switch_Form" prefHeight="50.0" prefWidth="220.0" styleClass="Button" stylesheets="@../../../../java/com/example/demo/employee.css" text="Purchase" AnchorPane.leftAnchor="5.0">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_CART" size="2EM" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="logout" layoutX="4.0" layoutY="591.0" mnemonicParsing="false" onAction="#logout" prefHeight="45.0" prefWidth="50.0">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" size="2.5EM" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="Button" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </Button>
+                        <Label layoutX="61.0" layoutY="608.0" text="SIGN OUT" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="shoppingCart_btn" layoutX="71.0" layoutY="404.0" mnemonicParsing="false" onAction="#switch_Form" prefHeight="50.0" prefWidth="220.0" styleClass="Button" stylesheets="@../../../../java/com/example/demo/employee.css" text="Shopping_cart" AnchorPane.leftAnchor="5.0">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_CART" size="2em" />
+                           </graphic>
+                        </Button>
+                     </children></AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="0.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="purchase_form" layoutX="148.0" layoutY="122.0" prefHeight="654.5" prefWidth="869.0" styleClass="greengreen-back" stylesheets="@../../../../java/com/example/demo/employee.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="12.0" layoutY="7.0" prefHeight="640.0" prefWidth="630.0" stylesheets="@../../../../java/com/example/demo/employee.css" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="7.0">
+                                 <styleClass>
+                                    <String fx:value="greengreen-back" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView fx:id="purchase_tableView" layoutX="16.0" layoutY="54.0" onMouseClicked="#purchaseProductsSelect" prefHeight="570.0" prefWidth="594.0">
+                                      <columns>
+                                        <TableColumn fx:id="purchase_col_Name" prefWidth="76.72647094726562" text="Name" />
+                                        <TableColumn fx:id="purchase_col_Type" prefWidth="73.77349853515625" text="Type" />
+                                          <TableColumn fx:id="purchase_col_Quantity" prefWidth="67.24658203125" text="Quantity" />
+                                          <TableColumn fx:id="purchase_col_Date" prefWidth="180.33944702148438" text="produceDate" />
+                                          <TableColumn fx:id="purchase_col_Guaruantee" prefWidth="101.66058349609375" text="guaruanteePeriod" />
+                                          <TableColumn fx:id="purchase_col_Price" prefWidth="89.05682373046875" text="Price" />
+                                      </columns>
+                                    </TableView>
+                                    <TextField fx:id="purchase_search_text" layoutX="23.0" layoutY="13.0" onKeyTyped="#purchaseProductsSearch" prefHeight="30.0" prefWidth="170.0" promptText="search for a product" stylesheets="@../../../../java/com/example/demo/employee.css">
+                                       <font>
+                                          <Font name="Tahoma" size="13.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="TextField" />
+                                          <String fx:value="border" />
+                                       </styleClass>
+                                    </TextField>
+                                    <FontAwesomeIconView fill="#8d8686" glyphName="SEARCH" layoutX="167.0" layoutY="35.0" size="1.5em" />
+                                 </children></AnchorPane>
+                              <AnchorPane layoutX="667.0" layoutY="7.0" prefHeight="640.0" prefWidth="390.0" stylesheets="@../../../../java/com/example/demo/employee.css" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="7.0">
+                                 <styleClass>
+                                    <String fx:value="greengreen-back" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <Label layoutX="47.0" layoutY="58.0" text="ProductName:" AnchorPane.leftAnchor="47.0">
+                                       <font>
+                                          <Font name="Tahoma" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="purchase_Name" editable="false" layoutX="158.0" layoutY="58.0" styleClass="TextField" stylesheets="@../../../../java/com/example/demo/employee.css" />
+                                    <Label layoutX="52.0" layoutY="113.0" text="ProductType:" AnchorPane.leftAnchor="52.0">
+                                       <font>
+                                          <Font name="Tahoma" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="purchase_Type_combox" layoutX="159.0" layoutY="108.0" prefHeight="32.0" prefWidth="157.0" promptText="choose" />
+                                    <Label layoutX="83.0" layoutY="166.0" text="Quantity:" AnchorPane.leftAnchor="83.0">
+                                       <font>
+                                          <Font name="Tahoma" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="purchase_quantity" layoutX="158.0" layoutY="165.0" styleClass="TextField" stylesheets="@../../../../java/com/example/demo/employee.css" AnchorPane.leftAnchor="158.0" />
+                                    <Button fx:id="pruchase_Add_btn" layoutX="35.0" layoutY="407.0" mnemonicParsing="false" onAction="#addtoShoppingCart" prefHeight="45.0" prefWidth="325.0" styleClass="add-btn" stylesheets="@../../../../java/com/example/demo/employee.css" text="Add to Shopping_Cart">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Button>
+                                    <Label layoutX="67.0" layoutY="361.0" text="Total:">
+                                       <font>
+                                          <Font name="Tahoma" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="purchase_total" layoutX="110.0" layoutY="361.0" prefHeight="19.0" prefWidth="84.0" text="\$0.0">
+                                       <font>
+                                          <Font name="Tahoma" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="pruchase_Pay_btn" layoutX="240.0" layoutY="524.0" mnemonicParsing="false" onAction="#purchasePay" prefHeight="50.0" prefWidth="80.0" styleClass="pay-btn" stylesheets="@../../../../java/com/example/demo/employee.css" text="Pay" AnchorPane.rightAnchor="70.0" />
+                                    <Button fx:id="purchase_Clear_btn" layoutX="70.0" layoutY="524.0" mnemonicParsing="false" onAction="#purchaseClear" prefHeight="50.0" prefWidth="80.0" styleClass="recept-btn" stylesheets="@../../../../java/com/example/demo/employee.css" text="Clear" AnchorPane.leftAnchor="70.0" />
+                                    <Label layoutX="53.0" layoutY="212.0" text="ProduceDate:">
+                                       <font>
+                                          <Font name="Tahoma" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="purchase_Date" editable="false" layoutX="159.0" layoutY="211.0" styleClass="TextField" stylesheets="@../../../../java/com/example/demo/employee.css" />
+                                    <Label layoutX="14.0" layoutY="258.0" text="GuaruanteePeriod:">
+                                       <font>
+                                          <Font name="Tahoma" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="purchase_Guaruantee" editable="false" layoutX="159.0" layoutY="257.0" styleClass="TextField" stylesheets="@../../../../java/com/example/demo/employee.css" />
+                                    <Label layoutX="63.0" layoutY="302.0" text="Single Price:">
+                                       <font>
+                                          <Font name="Tahoma" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="purchase_Price" editable="false" layoutX="160.0" layoutY="301.0" styleClass="TextField" stylesheets="@../../../../java/com/example/demo/employee.css" />
+                                    <Button fx:id="purchase_Sure_btn" layoutX="179.0" layoutY="355.0" mnemonicParsing="false" onAction="#purchaseSure" prefHeight="30.0" prefWidth="75.0" styleClass="update-btn" stylesheets="@../../../../java/com/example/demo/employee.css" text="Sure" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="shoppingCart_form" layoutX="111.0" layoutY="109.0" prefHeight="654.5" prefWidth="1069.0" styleClass="greengreen-back" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="11.0" layoutY="9.0" prefHeight="304.0" prefWidth="1045.0" stylesheets="@../../../../java/com/example/demo/employee.css">
+                                 <styleClass>
+                                    <String fx:value="greengreen-back" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TableView fx:id="shoppingCart_tableView" layoutX="10.0" layoutY="8.0" onMouseClicked="#shoppingCartProductsSelect" prefHeight="288.0" prefWidth="1029.0">
+                                      <columns>
+                                        <TableColumn fx:id="shoppingCart_col_Name" prefWidth="154.5709686279297" text="Name" />
+                                        <TableColumn fx:id="shoppingCart_col_Type" prefWidth="141.73468017578125" text="Type" />
+                                          <TableColumn fx:id="shoppingCart_col_Quantity" prefWidth="106.26129150390625" text="Quantity" />
+                                          <TableColumn fx:id="shoppingCart_col_Date" prefWidth="246.89837646484375" text="produceDate" />
+                                          <TableColumn fx:id="shoppingCart_col_Guarantee" prefWidth="221.371826171875" text="guaranteePeriod" />
+                                          <TableColumn fx:id="shoppingCart_col_Price" prefWidth="155.0" text="Price" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <Button fx:id="shoppingCart_Pay_btn" layoutX="856.0" layoutY="548.0" mnemonicParsing="false" onAction="#shoppingCartPay" prefHeight="60.0" prefWidth="100.0" styleClass="add-btn" stylesheets="@../../../../java/com/example/demo/employee.css" text="Pay" AnchorPane.topAnchor="548.0" />
+                              <Button fx:id="ShoppingCart_Delete_btn" layoutX="654.0" layoutY="548.0" mnemonicParsing="false" onAction="#shoppingCartDelete" prefHeight="60.0" prefWidth="100.0" styleClass="Delete-btn" stylesheets="@../../../../java/com/example/demo/employee.css" text="Delete" AnchorPane.topAnchor="548.0" />
+                              <Label layoutX="694.0" layoutY="390.0" text="Total:">
+                                 <font>
+                                    <Font name="Tahoma" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="ShoppingCart_total_text" editable="false" layoutX="751.0" layoutY="390.0" styleClass="TextField" stylesheets="@../../../../java/com/example/demo/employee.css" text="\$0.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="65.0" layoutY="348.0" text="productName:">
+                                 <font>
+                                    <Font name="Tahoma" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="shoppingCart_Name_text" editable="false" layoutX="185.0" layoutY="347.0" styleClass="TextField" stylesheets="@../../../../java/com/example/demo/employee.css" />
+                              <Label layoutX="71.0" layoutY="397.0" text="productType:">
+                                 <font>
+                                    <Font name="Tahoma" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="shoppingCart_Type_text" editable="false" layoutX="183.0" layoutY="396.0" styleClass="TextField" stylesheets="@../../../../java/com/example/demo/employee.css" />
+                              <Label layoutX="102.0" layoutY="445.0" text="Quantity:">
+                                 <font>
+                                    <Font name="Tahoma" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="132.0" layoutY="585.0" text="Price:">
+                                 <font>
+                                    <Font name="Tahoma" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="shoppingCart_Price_text" editable="false" layoutX="183.0" layoutY="584.0" styleClass="TextField" stylesheets="@../../../../java/com/example/demo/employee.css" />
+                              <Button fx:id="ShoppingCart_Update_btn" layoutX="415.0" layoutY="376.0" mnemonicParsing="false" onAction="#shoppingCartUpdate" prefHeight="60.0" prefWidth="100.0" styleClass="update-btn" stylesheets="@../../../../java/com/example/demo/employee.css" text="Update" AnchorPane.topAnchor="376.0" />
+                              <TextField fx:id="shoppingCart_Quantity_box" layoutX="184.0" layoutY="445.0" styleClass="TextField" stylesheets="@../../../../java/com/example/demo/employee.css" />
+                              <Label layoutX="69.0" layoutY="493.0" text="produceDate:">
+                                 <font>
+                                    <Font name="Tahoma" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="shoppingCart_Date_text" editable="false" layoutX="184.0" layoutY="493.0" styleClass="TextField" stylesheets="@../../../../java/com/example/demo/employee.css" />
+                              <Label layoutX="40.0" layoutY="539.0" text="guaranteePeriod:">
+                                 <font>
+                                    <Font name="Tahoma" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="shopping_Guarantee_text" editable="false" layoutX="183.0" layoutY="539.0" styleClass="TextField" stylesheets="@../../../../java/com/example/demo/employee.css" />
+                              <Button fx:id="shoppingCart_Clear_btn" layoutX="417.0" layoutY="477.0" mnemonicParsing="false" onAction="#shoppingCart_Clear" prefHeight="60.0" prefWidth="100.0" styleClass="Clear-btn" stylesheets="@../../../../java/com/example/demo/employee.css" text="Clear" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
