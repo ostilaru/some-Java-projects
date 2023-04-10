@@ -1,0 +1,90 @@
+
+.Left{
+    -fx-background-color: linear-gradient(to bottom right, #f8c870, #e79a34);
+    /* -fx-background-color: #76EEC6;*/
+    -fx-border-color: #000;
+    -fx-border-width: .4px 0px .4px .4px; /* TOP RIGHT BOTTOM LEFT*/
+}
+
+.left-form{
+    -fx-background-color: linear-gradient(to bottom right, #C1FFC1, #76EEC6);
+    /* -fx-background-color: #76EEC6;*/
+    -fx-border-color: #000;
+    -fx-border-width: .4px 0px .4px .4px; /* TOP RIGHT BOTTOM LEFT*/
+}
+
+.right-form{
+    /* -fx-background-color: 	#8DEEEE;*/
+    -fx-background-color: linear-gradient(to bottom right, #97FFFF, #7FFFD4);
+    -fx-border-color: #000;
+    -fx-border-width: .4px 0px .4px .4px; /* TOP RIGHT BOTTOM LEFT*/
+}
+
+.border{
+    -fx-background-color: linear-gradient(to top left, #0ee894, #86f8a7);
+    -fx-border-color: #a6a2a2;
+}
+
+.top-dorm{
+    -fx-background-color: linear-gradient(to bottom left, #6defef, #86f8a7);
+    -fx-border-color: #000;
+    -fx-border-width: .4px 0px .4px .4px; /* TOP RIGHT BOTTOM LEFT*/
+}
+
+.Label{
+    -fx-text-fill: rgba(194, 12, 234, 0.96);
+    -fx-font-family: "Arima Madurai";
+}
+
+.Button{
+    -fx-background-color: linear-gradient(to bottom right, #0ee8c8, #76EEC6);
+    -fx-text-fill: #a46c26;
+    -fx-font-family: "Arima Madurai";
+    -fx-cursor: hand; /* mouse become hand when click this button */
+    -fx-font-size: 20px;
+}
+
+.Button:hover{
+    -fx-background-color: linear-gradient(to bottom right, #15cccc, #1ed598);
+}
+
+.ButtonLeft{
+    -fx-background-color: linear-gradient(to bottom right, #0ee894, #87f1c8);
+    -fx-text-fill: rgba(194, 12, 234, 0.96);
+    -fx-font-family: "Arima Madurai";
+    -fx-cursor: hand; /* mouse become hand when click this button */
+    -fx-font-size: 20px;
+    -fx-pref-width: 135;
+    -fx-pref-height: 55;
+}
+.ButtonLeft:hover{
+    -fx-background-color: linear-gradient(to bottom right, #15cccc, #1ed598);
+}
+
+.Password{
+    -fx-background-color: linear-gradient(to bottom right, #FFF5EE, #FFFFF0);
+    -fx-background-radius: 8px;
+    -fx-border-width: 0px 0px .8px 0px;
+    -fx-border-radius: 8px;
+}
+
+.Password:focused{
+    -fx-background-color: #fff;
+    -fx-border-width: 0px 0px 1.8px 0px;
+}
+
+.Close{
+    -fx-background-color: linear-gradient(to bottom right, #0ee8c8, #76EEC6);
+    -fx-cursor: hand; /* mouse become hand when click this button */
+}
+
+.Close:hover{
+    -fx-background-color: linear-gradient(to bottom right, #15cccc, #1ed598);
+}
+
+.HyperLink{
+    -fx-border-color: transparent;
+    -fx-font-family: "Arima Madurai";
+    -fx-font-size: 20px;
+}
+

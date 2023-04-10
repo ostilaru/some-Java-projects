@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS布局</title>
+    <style type="text/css">
+      body{
+        margin: 0px;
+        pandding: 0px;
+      }
+      #div1{
+        width: 100px;
+        height: 100px;
+        background-color: greenyellow;
+        float: left;
+
+        /* 绝对定位 */
+        position: absolute;
+        left: 100px;
+        top: 100px;
+      }
+      #div2{
+        width: 100px;
+        height: 100px;
+        background-color: lightgoldenrodyellow;
+
+        /* 相对定位 */
+        position: relative;
+        float: right;
+        margin-left: 20px;
+      }
+      #div3{
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+
+      }
+      #div4{
+        width: 100px;
+        height: 100px;
+        background-color: #7c3186;
+
+      }
+      #div5{
+        width: 100px;
+        height: 100px;
+        background-color: #0a7dd7;
+
+      }
+      div{
+        position: relative;
+      }
+    </style>
+</head>
+<body>
+    <div id="div1">&nbsp;</div>
+    <div id="div2">&nbsp;</div>
+    <div id="div3">&nbsp;
+      <div id="div4">&nbsp;</div>
+      <div id="div5">&nbsp;</div>
+    </div>
+
+</body>
+</html>

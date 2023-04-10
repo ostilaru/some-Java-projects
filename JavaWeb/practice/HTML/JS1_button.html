@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS的button</title>
+</head>
+<body>
+  <h1 id="h1">这是一个标题</h1>
+  <p id="demo0">这是一段可以改变的文字</p>
+  <p id="demo1">这也是一段可以改变的文字</p>
+
+  <script>
+    function myFunction() {
+      x = document.getElementById("demo0")
+      x.innerHTML = "你好啊";
+      x.style.color = "red";
+
+      document.getElementById("demo1").innerHTML = "最近过的怎么样";
+
+      // 增加显示地点的功能
+        document.getElementById("h1").innerHTML = "你在哪里";
+
+      // 增加显示时间的功能
+      document.getElementById("h1").innerHTML = Date();
+      // document.write(Date()); 如果在文档已完成加载后执行 document.write，整个 HTML 页面将被覆盖。
+    }
+    function checkInput() {
+      x = document.getElementById("input1")
+        if (isNaN(x.value)) {
+            // document.getElementById("demo2").innerHTML = "请输入数字";
+          alert("请输入数字");
+        } else {
+            // document.getElementById("demo2").innerHTML = "输入正确";
+          alert("输入正确");
+        }
+    }
+  </script>
+
+ <button type="button" onclick="myFunction()">点击我</button>
+
+  <p id="demo2">请输入数字</p>
+  <input id="input1" type="text">
+    <button type="button" onclick="checkInput()">检查</button>
+
+</body>
+</html>

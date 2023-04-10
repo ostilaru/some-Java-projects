@@ -1,0 +1,46 @@
+
+    /* CSS 代码放在style里面 */
+body{
+    background-color: darkslategray;
+}
+h1{
+    color: lightblue;
+    font-size: 50px;
+    text-align: center;
+}
+p{
+    color: yellowgreen;
+    font-size: 20px;
+    text-align: center;
+}
+/* 组合样式 div内部的p标签遵循 */
+div p{
+    color: darkorange;
+    font-size: 30px;
+    text-align: center;
+}
+div .f60{
+    font-size: 60px;
+    font-family: 宋体;
+}
+#para1{
+    color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+}
+.para2{
+    color: darkred;
+    font-size: 30px;
+    font-style: italic;
+    font-family: "华文彩云";
+    text-align: center;
+}
+/* 通过class来选择元素 */
+.center{
+    text-align: center;
+}
+.f40{
+    font-size: 40px;
+}
+
+
